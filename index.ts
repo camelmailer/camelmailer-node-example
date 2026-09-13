@@ -1,4 +1,4 @@
-import { CamelMailer } from 'camelmailer';
+import { CamelMailer } from '@camelmailer/sdk';
 
 // Reads CAMELMAILER_API_KEY (and optionally CAMELMAILER_BASE_URL for
 // self-hosted instances) from the environment.
@@ -12,7 +12,7 @@ const to = process.env.CAMELMAILER_TO ?? 'delivered@example.com';
 const { data, error } = await camelmailer.emails.send({
   from,
   to,
-  subject: 'Hello from CamelMailer',
+  subject: 'Hello from Camelmailer',
   html_body: '<strong>It works!</strong>',
 });
 
@@ -35,7 +35,7 @@ const templated = await camelmailer.emails.sendWithTemplate({
   from,
   to,
   template: 'welcome',
-  template_model: { name: 'Ada', product: 'CamelMailer' },
+  template_model: { name: 'Ada', product: 'Camelmailer' },
 });
 
 if (templated.error) {
