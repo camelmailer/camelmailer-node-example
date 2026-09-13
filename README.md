@@ -1,11 +1,11 @@
-# CamelMailer with Node.js
+# Camelmailer with Node.js
 
-This example shows how to use [CamelMailer](https://camelmailer.com) with [Node.js](https://nodejs.org): a plain send, a send with a stored template, and a batch send — all through the [camelmailer](https://github.com/camelmailer/camelmailer-node) SDK.
+This example shows how to use [Camelmailer](https://camelmailer.com) with [Node.js](https://nodejs.org): a plain send, a send with a stored template, and a batch send — all through the [@camelmailer/sdk](https://www.npmjs.com/package/@camelmailer/sdk) SDK.
 
 ## Prerequisites
 
 - Node.js 20+
-- A CamelMailer server API key (dashboard → your server → **Credentials** → new credential of type **API**)
+- A Camelmailer server API key (dashboard → your server → **Credentials** → new credential of type **API**)
 
 ## Instructions
 
@@ -15,7 +15,6 @@ This example shows how to use [CamelMailer](https://camelmailer.com) with [Node.
    npm install
    ```
 
-   > The SDK is installed straight from GitHub until it is published to npm. After publishing, `npm install camelmailer` works too.
 
 2. Set your environment:
 
